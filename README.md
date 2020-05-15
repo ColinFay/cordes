@@ -13,8 +13,8 @@ withr::with_dir(
     cordes::cordes_create("plop", open = FALSE)
   }
 )
-#> ✓ Creating '/private/var/folders/5z/rm2h62lj45d332kfpj28c8zm0000gn/T/RtmpSb2a5i/plop/'
-#> ✓ Setting active project to '/private/var/folders/5z/rm2h62lj45d332kfpj28c8zm0000gn/T/RtmpSb2a5i/plop'
+#> ✓ Creating '/private/var/folders/5z/rm2h62lj45d332kfpj28c8zm0000gn/T/RtmpJ4Xryf/plop/'
+#> ✓ Setting active project to '/private/var/folders/5z/rm2h62lj45d332kfpj28c8zm0000gn/T/RtmpJ4Xryf/plop'
 #> ✓ Creating 'R/'
 #> ✓ Writing 'DESCRIPTION'
 #> Package: plop
@@ -30,7 +30,9 @@ withr::with_dir(
 #> RoxygenNote: 7.1.0
 #> ✓ Writing 'NAMESPACE'
 #> ✓ Setting active project to '<no active project>'
-#> Wrote to /private/var/folders/5z/rm2h62lj45d332kfpj28c8zm0000gn/T/RtmpSb2a5i/plop/inst/cordes/package.json:
+#> ✓ Setting active project to '/private/var/folders/5z/rm2h62lj45d332kfpj28c8zm0000gn/T/RtmpJ4Xryf/plop'
+#> ✓ Adding '^inst/cordes$' to '.Rbuildignore'
+#> Wrote to /private/var/folders/5z/rm2h62lj45d332kfpj28c8zm0000gn/T/RtmpJ4Xryf/plop/inst/cordes/package.json:
 #> 
 #> {
 #>   "name": "cordes",
@@ -44,12 +46,12 @@ withr::with_dir(
 #>   "author": "",
 #>   "license": "ISC"
 #> }
-#> ✓ Setting active project to '/private/var/folders/5z/rm2h62lj45d332kfpj28c8zm0000gn/T/RtmpSb2a5i/plop'
 #> ✓ Adding 'processx' to Imports field in DESCRIPTION
 #> ● Refer to functions with `processx::fun()`
 #> ✓ Adding 'yesno' to Imports field in DESCRIPTION
 #> ● Refer to functions with `yesno::fun()`
 #> ✓ Adding 'cordes' to Imports field in DESCRIPTION
+#> ✓ Adding 'ColinFay/cordes' to Remotes field in DESCRIPTION
 #> ● Refer to functions with `cordes::fun()`
 ```
 

@@ -4,7 +4,20 @@
 \alias{cordes_create}
 \title{Create a Cordes Boilerplate}
 \usage{
-cordes_create(path, open)
+cordes_create(path, open, ...)
+}
+\arguments{
+\item{path}{A path. If it exists, it is used. If it does not exist, it is
+created, provided that the parent path exists.}
+
+\item{open}{If \code{TRUE}, \link[usethis:proj_activate]{activates} the new project:
+\itemize{
+\item If RStudio desktop, the package is opened in a new session.
+\item If on RStudio server, the current RStudio project is activated.
+\item Otherwise, the working directory and active project is changed.
+}}
+
+\item{...}{args passed to \code{usethis::create_package}}
 }
 \description{
 Create a Cordes Boilerplate

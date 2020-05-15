@@ -1,14 +1,19 @@
 #' Create a Cordes Boilerplate
 #'
-#' @inherirParams create_package
+#' @inheritParams usethis::create_package
+#' @param ... args passed to `usethis::create_package`
 #'
 #' @export
 #' @importFrom fs path_abs dir_create file_create file_copy
 #' @importFrom processx run
 #' @importFrom rstudioapi openProject isAvailable
 #' @importFrom usethis create_package use_build_ignore use_package use_dev_package
-cordes_create <- function(path, open) {
-  create_package(path_abs(path), open = FALSE)
+cordes_create <- function(
+  path,
+  open,
+  ...
+) {
+  create_package(path_abs(path), open = FALSE, ...)
   curr_dir <- setwd(path)
   on.exit(setwd(curr_dir))
 

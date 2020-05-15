@@ -1,7 +1,9 @@
 #' Install Npm infra inside Cordes Package
 #'
-#' @param force
-#' @param yes_no_message
+#' @param package package name
+#' @param force Prompt the user to accept install?
+#' @param yes_no_message What to display as a prompt message
+#' @param folder Where to got to run `npm install`
 #'
 #' @export
 #'

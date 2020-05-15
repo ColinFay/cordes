@@ -1,11 +1,10 @@
 #' Run Node Script
 #'
-#' @return
+#' @inheritParams cordes_npm_install
+#'
 #' @export
 #'
 #' @importFrom processx run
-#'
-#' @examples
 cordes_run <- function(
   package,
   extra_args = c(),

@@ -5,11 +5,17 @@
 #'
 #' @importFrom processx run
 #' @importFrom here here
+#' @importFrom cli cat_rule
 #' @export
-npm_install_module <- function(module, npm_opt = c()) {
-  run(
+install_module <- function(module, npm_opt = c()) {
+  proc <- run(
     "npm",
     c("install", module, npm_opt),
     wd = here("inst/cordes")
   )
+  for (i in c("stdout", "stderr")){
+    cat_rule(i)
+    cat(proc[[i]])
+  }
+  invisible(proc)
 }

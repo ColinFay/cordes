@@ -6,8 +6,10 @@
 \usage{
 cordes_run(package, extra_args = c(), file = "app.js", folder = "cordes")
 }
-\value{
+\arguments{
+\item{package}{package name}
 
+\item{folder}{Where to got to run \verb{npm install}}
 }
 \description{
 Run Node Script

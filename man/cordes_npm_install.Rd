@@ -2,7 +2,7 @@
 % Please edit documentation in R/install.R
 \name{cordes_npm_install}
 \alias{cordes_npm_install}
-\title{Title}
+\title{Install Npm infra inside Cordes Package}
 \usage{
 cordes_npm_install(
   package,
@@ -13,11 +13,14 @@ cordes_npm_install(
 )
 }
 \arguments{
-\item{yes_no_message}{}
-}
-\value{
+\item{package}{package name}
 
+\item{force}{Prompt the user to accept install?}
+
+\item{yes_no_message}{What to display as a prompt message}
+
+\item{folder}{Where to got to run \verb{npm install}}
 }
 \description{
-Title
+Install Npm infra inside Cordes Package
 }
