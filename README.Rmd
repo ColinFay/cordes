@@ -1,0 +1,37 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# cordes
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+```{r}
+withr::with_dir(
+  tempdir(),{
+    cordes::cordes_create("plop", open = FALSE)
+  }
+)
+```
+
+
+```{r}
+withr::with_dir(
+  tempdir(),{
+    fs::dir_tree("plop")
+  }
+)
+```
+
