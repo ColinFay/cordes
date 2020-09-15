@@ -1,6 +1,6 @@
 #' Install CORDES npm dependencies
 #'
-#' @inheritParams cordes::npm_install
+#' @inheritParams cordes::cordes_npm_install
 #'
 #' @importFrom cordes cordes_npm_install
 #' @return
