@@ -13,7 +13,7 @@
 cordes_npm_install <- function(
   package,
   force = FALSE,
-  yes_no_message = "This will install plop npm dependencies on your local library. \nAre you ok with that?",
+  yes_no_message = "This will install npm dependencies on your local library. \nAre you ok with that?",
   folder = "cordes"
 ){
   # Prompt the users unless they bypass (we're installing stuff on their machine)
