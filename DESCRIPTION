@@ -16,7 +16,6 @@ RoxygenNote: 7.1.0
 Imports: 
     processx,
     yesno,
-    cordes,
     usethis,
     fs,
     rstudioapi,

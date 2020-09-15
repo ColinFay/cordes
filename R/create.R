@@ -19,17 +19,16 @@ cordes_create <- function(
 
   # Creating Node Related stuff
   dir_create("inst/cordes")
-  # file_copy(
-  #   system.file("dev.R", package = "cordes"),
-  #   "inst/dev.R"
-  # )
   use_build_ignore("inst/cordes")
   file_create("inst/cordes/app.js")
+
   proc <- run(
     "npm", c("init", "-y"), wd = "inst/cordes"
   )
+
   cat(proc$stdout)
   # R default files
+
   file_copy(
     system.file("boilerplate/install.R", package = "cordes"),
     "R/npm_install.R"
@@ -47,6 +46,12 @@ cordes_create <- function(
   x <- gsub("CORDES", basename(path), x)
   writeLines(x, "R/run.R")
 
+  # Readme
+  file_copy(
+    system.file("readme.txt", package = "cordes"),
+    "inst/readme.txt"
+  )
+
   # Pak deps
   use_package("processx")
   use_package("yesno")
@@ -57,3 +62,14 @@ cordes_create <- function(
     browseURL(path)
   }
 }
+
+# to be used in RStudio "new project" GUI
+cordes_create_gui <- function(path,...){
+  dots <- list(...)
+  cordes_create(
+    path = path,
+    open = FALSE
+    #dots$blabla
+  )
+}
+

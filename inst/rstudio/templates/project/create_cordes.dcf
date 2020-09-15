@@ -1,0 +1,4 @@
+Binding: cordes_create_gui
+Title: Package Wrapping Node Modules
+OpenFiles: inst/readme.txt
+Icon: cordes.png
